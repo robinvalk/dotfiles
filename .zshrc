@@ -103,3 +103,13 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+eval "$(jenv init -)"
+
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
+# mvn docker testcontainers plugin fixes
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+
+# gcloud cli numpy access
+export CLOUDSDK_PYTHON_SITEPACKAGES=1
