@@ -26,6 +26,8 @@ brew "pipenv"
 brew "python@3.10"
 brew "ssh-copy-id"
 brew "rclone"
+brew "telnet"
+brew "jq"
 
 # Containers
 brew "docker"
@@ -51,6 +53,8 @@ cask "openlens"
 cask "transmission"
 cask "tunnelblick"
 cask "synology-drive"
+cask "calibre"
+cask "google-drive"
 
 # Quicklook
 cask 'qlmarkdown'
