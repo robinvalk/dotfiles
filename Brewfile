@@ -28,10 +28,18 @@ brew "ssh-copy-id"
 brew "rclone"
 brew "telnet"
 brew "jq"
+brew "nmap"
 
 # Containers
 brew "docker"
 brew "docker-compose"
+# brew "podman"
+
+brew "docker-buildx"
+# docker-buildx is a Docker plugin. For Docker to find this plugin, symlink it:
+# mkdir -p ~/.docker/cli-plugins
+# ln -sfn $HOMEBREW_PREFIX/opt/docker-buildx/bin/docker-buildx ~/.docker/cli-plugins/docker-buildx
+
 brew "colima"
 brew "kubectl"
 brew "helm"
@@ -55,6 +63,8 @@ cask "tunnelblick"
 cask "synology-drive"
 cask "calibre"
 cask "google-drive"
+cask "steam"
+cask "spotify"
 
 # Quicklook
 cask 'qlmarkdown'
@@ -65,6 +75,22 @@ cask "prusaslicer"
 cask "autodesk-fusion360"
 
 # Genesis
-brew "bento4"
-cask "google-cloud-sdk"
-brew "go"
+# brew "bento4"
+# cask "google-cloud-sdk"
+# brew "go"
+
+# Magenta
+cask "skype"
+cask "libreoffice"
+cask "citrix-workspace"
+# cask "ansible"
+
+# Drone flying
+cask "handbrake"
+
+# Google Takeout
+# tap "dart-lang/dart"
+# brew "dart"
+
+# Blog
+brew "hugo"
