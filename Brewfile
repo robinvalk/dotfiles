@@ -1,7 +1,8 @@
 tap "homebrew/bundle"
+tap "hashicorp/tap"
 
 # Make sure apps get installed in system Applications dir
-cask_args appdir: '/Applications'
+cask_args appdir: '/Applications', require_sha: true
 
 # Install ZSH
 brew 'zsh'
@@ -17,18 +18,27 @@ brew 'bash'
 brew "git"
 brew "wget"
 brew "mackup"
-brew "terraform"
+brew "hashicorp/tap/terraform"
 brew "terragrunt"
 brew "node"
 brew "yarn"
 brew "python"
 brew "pipenv"
 brew "python@3.10"
+brew "python@3.11"
 brew "ssh-copy-id"
 brew "rclone"
 brew "telnet"
 brew "jq"
 brew "nmap"
+brew "ffmpeg"
+
+# Neovim
+brew "neovim"
+brew "make"
+brew "unzip"
+brew "gcc"
+brew "ripgrep"
 
 # Containers
 brew "docker"
@@ -41,9 +51,11 @@ brew "docker-buildx"
 # ln -sfn $HOMEBREW_PREFIX/opt/docker-buildx/bin/docker-buildx ~/.docker/cli-plugins/docker-buildx
 
 brew "colima"
-brew "kubectl"
-brew "helm"
-brew "octant"
+# brew "kubectl"
+cask "utm"
+# brew "helm"
+# brew "octant"
+# brew "tailscale"
 
 # Java
 brew "openjdk@11"
@@ -57,40 +69,33 @@ cask "visual-studio-code"
 cask "jetbrains-toolbox"
 cask "iterm2"
 cask "obsidian"
-cask "openlens"
 cask "transmission"
-cask "tunnelblick"
 cask "synology-drive"
 cask "calibre"
 cask "google-drive"
 cask "steam"
 cask "spotify"
-
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
+cask "sonos"
+cask "arduino-ide"
+cask "gnucash"
+cask "telegram"
+cask "slack"
+cask "drawio"
+cask "maccy"
+cask "raycast"
 
 # 3D printing
 cask "prusaslicer"
-cask "autodesk-fusion360"
-
-# Genesis
-# brew "bento4"
-# cask "google-cloud-sdk"
-# brew "go"
+# cask "autodesk-fusion360"
 
 # Magenta
-cask "skype"
-cask "libreoffice"
 cask "citrix-workspace"
-# cask "ansible"
+
+# VMs
+cask "multipass"
 
 # Drone flying
 cask "handbrake"
-
-# Google Takeout
-# tap "dart-lang/dart"
-# brew "dart"
 
 # Blog
 brew "hugo"
