@@ -44,11 +44,17 @@ brew "ripgrep"
 brew "docker"
 brew "docker-compose"
 # brew "podman"
-
 brew "docker-buildx"
 # docker-buildx is a Docker plugin. For Docker to find this plugin, symlink it:
 # mkdir -p ~/.docker/cli-plugins
 # ln -sfn $HOMEBREW_PREFIX/opt/docker-buildx/bin/docker-buildx ~/.docker/cli-plugins/docker-buildx
+
+# Helm charts library
+brew "yq"
+brew "go-task"
+brew "helm-docs@1.11.0"
+brew "chart-testing"
+brew "helm"
 
 brew "colima"
 # brew "kubectl"
@@ -60,6 +66,7 @@ cask "utm"
 # Java
 brew "openjdk@11"
 brew "openjdk@17"
+brew "openjdk@23"
 brew "jenv"
 brew "mvn"
 
@@ -71,7 +78,7 @@ cask "iterm2"
 cask "obsidian"
 cask "transmission"
 cask "synology-drive"
-cask "calibre"
+# cask "calibre"
 cask "google-drive"
 cask "steam"
 cask "spotify"
@@ -83,12 +90,13 @@ cask "slack"
 cask "drawio"
 cask "maccy"
 cask "raycast"
+cask "deskpad" # virtual screen for screensharing
 
 # 3D printing
 cask "prusaslicer"
 # cask "autodesk-fusion360"
 
-# Magenta
+# Work
 cask "citrix-workspace"
 
 # VMs
